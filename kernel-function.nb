@@ -1,0 +1,329 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13834,        321]
+NotebookOptionsPosition[     12650,        292]
+NotebookOutlinePosition[     12994,        307]
+CellTagsIndexPosition[     12951,        304]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["KernelFunction", "Title",
+ CellChangeTimes->{{3.7656477344247146`*^9, 
+  3.765647736352341*^9}},ExpressionUUID->"0720994d-a45e-4aea-acfe-\
+80216f3bca77"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cf", "=", 
+  RowBox[{"FunctionCompile", "[", 
+   RowBox[{"Function", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Typed", "[", 
+       RowBox[{"x", ",", "\"\<Real64\>\""}], "]"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Typed", "[", 
+       RowBox[{
+        RowBox[{"KernelFunction", "[", "ContinuedFraction", "]"}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Real64\>\"", "}"}], "\[Rule]", 
+         "\"\<Real64\>\""}]}], "]"}], "[", "x", "]"}]}], "]"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7656472589714603`*^9, 3.76564726098046*^9}, {
+  3.7656473052265315`*^9, 3.765647309578536*^9}, {3.7656473739806337`*^9, 
+  3.765647476354003*^9}, {3.7656475104260535`*^9, 3.765647582897088*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"b42c50f4-1a9f-4e77-8bee-dd7dd1346aa0"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["CompiledCodeFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8., StripOnInput -> False], 
+               TraditionalForm], {0, 0}], Background -> GrayLevel[0.93], Axes -> 
+             False, AspectRatio -> 1, ImageSize -> {Automatic, 
+               Dynamic[
+               3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification]), ImageSizeCache -> {27., {0., 10.}}]}, Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", "\"Real64\"", "}"}], "\[Rule]", 
+                    "\"Real64\""}], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8., StripOnInput -> False], 
+               TraditionalForm], {0, 0}], Background -> GrayLevel[0.93], Axes -> 
+             False, AspectRatio -> 1, ImageSize -> {Automatic, 
+               Dynamic[
+               3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification]), ImageSizeCache -> {27., {0., 10.}}]}, Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", "\"Real64\"", "}"}], "\[Rule]", 
+                    "\"Real64\""}], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  CompiledCodeFunction[
+   Association[
+   "Signature" -> TypeSpecifier[{"Real64"} -> "Real64"], "Input" -> Function[{
+       Typed[$CellContext`x, "Real64"]}, 
+      Typed[
+       KernelFunction[ContinuedFraction], {"Real64"} -> 
+       "Real64"][$CellContext`x]], "ErrorFunction" -> Automatic, "SystemID" -> 
+    "Windows-x86-64", "VersionData" -> {12., 0, 0}, "orcInstance" -> 
+    906520080, "orcModuleId" -> 0, "targetMachineId" -> 908720784], 129634280,
+    129634256, 129634288, "{\"Real64\"} -> \"Real64\""],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.765647547220175*^9, 3.765647584316089*^9}},
+ CellLabel->"Out[49]=",ExpressionUUID->"63f8bc66-5e1f-4a5a-bf4f-2ea9b61895cf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cf", "[", "GoldenRatio", "]"}]], "Input",
+ CellChangeTimes->{{3.7656475857190914`*^9, 3.765647588730095*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"58bed819-34d8-4ca9-8d3e-3cd10a99e8cf"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CompiledCodeFunction","argtype",
+   "\"Argument type at position \\!\\(\\*RowBox[{\\\"1\\\"}]\\) does not \
+match function signature.\"",2,50,29,20483118162521917871,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7656475890640955`*^9},
+ CellLabel->
+  "During evaluation of \
+In[50]:=",ExpressionUUID->"92c543f6-aa5b-4503-b8d6-548572346363"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Failure",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"Argument type at position \\!\\(\\*TagBox[\\\"1\\\", \
+Function[Short[Slot[1], 5]]]\\) does not match function signature.\"", 
+                    "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ArgumentType\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"Argument type at position \\!\\(\\*TagBox[\\\"1\\\", \
+Function[Short[Slot[1], 5]]]\\) does not match function signature.\"", 
+                    "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ArgumentType\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Failure["ArgumentType", 
+   Association[
+   "MessageTemplate" -> 
+    "Argument type at position `1` does not match function signature.", 
+    "MessageParameters" -> {1}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.7656475890810957`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"277b7ca5-3880-4de6-97ea-86a097cab8ef"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cf", "[", 
+  RowBox[{"N", "[", "GoldenRatio", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7656475857190914`*^9, 3.7656476092896433`*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"c8d5a79c-0bde-4746-8e44-0515e16d83cf"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CompiledCodeFunction","uncomp",
+   "\"A compiled code runtime error occurred; reverting to uncompiled \
+evaluation: \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"ExpressionConversion\\\\\\\"\\\"}]\\).\"",2,51,
+   30,20483118162521917871,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.765647609593644*^9},
+ CellLabel->
+  "During evaluation of \
+In[51]:=",ExpressionUUID->"110ab75c-ee62-4716-a975-a96ea79e902f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", 
+   ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", 
+   "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", 
+   ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", 
+   "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", 
+   "1"}], "}"}]], "Output",
+ CellChangeTimes->{3.7656476096076436`*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"520bf97d-0327-433e-b212-9c894ad6d79a"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 988},
+WindowMargins->{{Automatic, 448}, {Automatic, 168}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 159, 3, 96, "Title",ExpressionUUID->"0720994d-a45e-4aea-acfe-80216f3bca77"],
+Cell[CellGroupData[{
+Cell[764, 29, 815, 19, 48, "Input",ExpressionUUID->"b42c50f4-1a9f-4e77-8bee-dd7dd1346aa0"],
+Cell[1582, 50, 4393, 90, 64, "Output",ExpressionUUID->"63f8bc66-5e1f-4a5a-bf4f-2ea9b61895cf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6012, 145, 212, 3, 28, "Input",ExpressionUUID->"58bed819-34d8-4ca9-8d3e-3cd10a99e8cf"],
+Cell[6227, 150, 397, 9, 21, "Message",ExpressionUUID->"92c543f6-aa5b-4503-b8d6-548572346363"],
+Cell[6627, 161, 4680, 93, 69, "Output",ExpressionUUID->"277b7ca5-3880-4de6-97ea-86a097cab8ef"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11344, 259, 242, 4, 28, "Input",ExpressionUUID->"c8d5a79c-0bde-4746-8e44-0515e16d83cf"],
+Cell[11589, 265, 451, 11, 21, "Message",ExpressionUUID->"110ab75c-ee62-4716-a975-a96ea79e902f"],
+Cell[12043, 278, 579, 10, 32, "Output",ExpressionUUID->"520bf97d-0327-433e-b212-9c894ad6d79a"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
